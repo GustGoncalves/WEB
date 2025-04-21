@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpotMusic</title>
+  <link rel="icon" href="img/Logo/logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="bg-black py-2">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Logo/logo.png" class="logo-redonda" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="playlists.html">Playlists</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="albuns.html">Álbuns</a></li>
+            <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav><br>
+      <div class="d-flex justify-content-center w-100">
+        <form class="d-flex w-50" role="search">
+          <input class="form-control me-2" type="search" placeholder="O que você quer ouvir?" aria-label="Buscar">
+          <button class="btn btn-outline-light" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>      
+    </div>
+  </header>
+  <div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Álbuns Recomendados</h2>
+      <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
+    </div>
+    <br>
+    <div class="row g-4">
+      <div class="custom-col">
+        <div class="card h-100 d-flex flex-column">
+          <img src="img/Albuns/Dark_Side_of_the_Moon.png" class="card-img-top" alt="Capa do Álbum: Dark Side of the Moon">
+          <div class="card-body">
+            <h5 class="card-title">The Dark Side of The Moon</h5>
+            <p class="card-text">Pink Floyd</p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col">
+        <div class="card h-100 d-flex flex-column">
+          <img src="img/Albuns/What's_Going_On.jpeg" class="card-img-top" alt="Capa do Álbum: What's Going On">
+          <div class="card-body">
+            <h5 class="card-title">What's Going On</h5>
+            <p class="card-text">Marvin Gaye</p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col">
+        <div class="card h-100 d-flex flex-column">
+          <img src="img/Albuns/Thriller.jpeg" class="card-img-top" alt="Capa do Álbum: Thriller">
+          <div class="card-body">
+            <h5 class="card-title">Thriller</h5>
+            <p class="card-text">Michael Jackson</p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col">
+        <div class="card h-100 d-flex flex-column">
+          <img src="img/Albuns/Songs_in_the_Key_of_Life.jpeg" class="card-img-top" alt="Capa do Álbum: Songs in the Key of Life">
+          <div class="card-body">
+            <h5 class="card-title">Songs in the Key of Life</h5>
+            <p class="card-text">Stevie Wonder</p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col">
+        <div class="card h-100 d-flex flex-column">
+          <img src="img/Albuns/Kind_of_Blue.png" class="card-img-top" alt="Capa do Álbum: Kind of Blue">
+          <div class="card-body">
+            <h5 class="card-title">Kind of Blue</h5>
+            <p class="card-text">Miles Davis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Álbuns Brasileiros</h2>
+      <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
+    </div>
+    <br>
+    <div class="row g-4">
+      <div class="custom-col">
+        <div class="card h-100 d-flex flex-column">
+          <img src="img/Albuns/Construção.jpeg" class="card-img-top" alt="Capa do Álbum: Construção">
+          <div class="card-body">
+            <h5 class="card-title">Construção</h5>
+            <p class="card-text">Chico Buarque</p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col h-100 d-flex flex-column">
+        <div class="card">
+          <img src="img/Albuns/Clube_da_Esquina.jpeg" class="card-img-top" alt="Capa do Álbum: Clube da Esquina">
+          <div class="card-body">
+            <h5 class="card-title">Clube da Esquina</h5>
+            <p class="card-text">Milton Nascimento e Lô Borges</p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col">
+        <div class="card h-100 d-flex flex-column">
+          <img src="img/Albuns/Elis_&_Tom.jpeg" class="card-img-top" alt="Capa do Álbum: Elis & Tom">
+          <div class="card-body">
+            <h5 class="card-title">Elis & Tom</h5>
+            <p class="card-text">Elis Regina e Antônio Carlos Jobim</p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col">
+        <div class="card h-100 d-flex flex-column">
+          <img src="img/Albuns/Cartola_II.jpeg" class="card-img-top" alt="Capa do Álbum: Cartola II">
+          <div class="card-body">
+            <h5 class="card-title">Cartola II</h5>
+            <p class="card-text">Cartola</p>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col">
+        <div class="card h-100 d-flex flex-column">
+          <img src="img/Albuns/Getz_Gilberto.jpeg" class="card-img-top" alt="Capa do Álbum: Getz/Gilberto">
+          <div class="card-body">
+            <h5 class="card-title">Getz/Gilberto</h5>
+            <p class="card-text">Stan Getz e João Gilberto</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+}
+
+.card {
+  transition: transform 0.3s ease;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  header img {
+    height: auto;
+  }
+}
+
+.container {
+  color: white;
+}
+
+.custom-col {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+@media (max-width: 992px) {
+  .custom-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.card-img-top {
+  height: 180px;
+  width: 180px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.logo-redonda {
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  height: 50px;
+  pointer-events: auto;
+}
+
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-control {
+  background-color: #000;
+  color: white;
+  border: 1px solid white;
+}
+
+.form-select {
+  background-color: #000;
+  color: white;
+  border: 1px solid white;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.form-control:focus {
+  background-color: #000;
+  color: white;
+  border-color: white;
+  box-shadow: none;
+}
+
+audio {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover audio {
+  opacity: 1;
+}
