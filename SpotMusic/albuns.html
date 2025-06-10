@@ -52,51 +52,118 @@
       <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
     </div>
     <br>
-    <div class="row g-4">
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Albuns/Dark_Side_of_the_Moon.png" class="card-img-top"
-            alt="Capa do Álbum: Dark Side of the Moon">
-          <div class="card-body">
-            <h5 class="card-title">The Dark Side of The Moon</h5>
-            <p class="card-text">Pink Floyd</p>
+    <div class="d-xl-none">
+      <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Albuns/Dark_Side_of_the_Moon.png" class="card-img-top" alt="Dark Side of The Moon">
+              <div class="card-body text-center">
+                <h5 class="card-title">Dark Side of The Moon</h5>
+                <p class="card-text">Pink Floyd</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Albuns/What's_Going_On.jpeg" class="card-img-top" alt="What's Going On">
+              <div class="card-body text-center">
+                <h5 class="card-title">What's Going On</h5>
+                <p class="card-text">Marvin Gaye</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Albuns/Thriller.jpeg" class="card-img-top" alt="Thriller">
+              <div class="card-body text-center">
+                <h5 class="card-title">Thriller</h5>
+                <p class="card-text">Michael Jackson</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Albuns/Songs_in_the_Key_of_Life.jpeg" class="card-img-top" alt="Songs in the Key of Life">
+              <div class="card-body text-center">
+                <h5 class="card-title">Songs in the Key of Life</h5>
+                <p class="card-text">Stevie Wonder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Albuns/Kind_of_Blue.png" class="card-img-top" alt="Kind of Blue">
+              <div class="card-body text-center">
+                <h5 class="card-title">Kind of Blue</h5>
+                <p class="card-text">Miles Davis</p>
+              </div>
+            </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Albuns/What's_Going_On.jpeg" class="card-img-top" alt="Capa do Álbum: What's Going On">
-          <div class="card-body">
-            <h5 class="card-title">What's Going On</h5>
-            <p class="card-text">Marvin Gaye</p>
+    </div>
+
+    <div class="d-none d-xl-block">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Albuns/Dark_Side_of_the_Moon.png" class="card-img-top" alt="Dark Side of The Moon">
+            <div class="card-body">
+              <h5 class="card-title">Dark Side of The Moon</h5>
+              <p class="card-text">Pink Floyd</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Albuns/Thriller.jpeg" class="card-img-top" alt="Capa do Álbum: Thriller">
-          <div class="card-body">
-            <h5 class="card-title">Thriller</h5>
-            <p class="card-text">Michael Jackson</p>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Albuns/What's_Going_On.jpeg" class="card-img-top" alt="What's Going On">
+            <div class="card-body">
+              <h5 class="card-title">What's Going On</h5>
+              <p class="card-text">Marvin Gaye</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Albuns/Songs_in_the_Key_of_Life.jpeg" class="card-img-top"
-            alt="Capa do Álbum: Songs in the Key of Life">
-          <div class="card-body">
-            <h5 class="card-title">Songs in the Key of Life</h5>
-            <p class="card-text">Stevie Wonder</p>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Albuns/Thriller.jpeg" class="card-img-top" alt="Thriller">
+            <div class="card-body">
+              <h5 class="card-title">Thriller</h5>
+              <p class="card-text">Michael Jackson</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Albuns/Kind_of_Blue.png" class="card-img-top" alt="Capa do Álbum: Kind of Blue">
-          <div class="card-body">
-            <h5 class="card-title">Kind of Blue</h5>
-            <p class="card-text">Miles Davis</p>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Albuns/Songs_in_the_Key_of_Life.jpeg" class="card-img-top" alt="Songs in the Key of Life">
+            <div class="card-body">
+              <h5 class="card-title">Songs in the Key of Life</h5>
+              <p class="card-text">Stevie Wonder</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Albuns/Kind_of_Blue.png" class="card-img-top" alt="Kind of Blue">
+            <div class="card-body">
+              <h5 class="card-title">Kind of Blue</h5>
+              <p class="card-text">Miles Davis</p>
+            </div>
           </div>
         </div>
       </div>
@@ -109,49 +176,118 @@
       <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
     </div>
     <br>
-    <div class="row g-4">
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Albuns/Construção.jpeg" class="card-img-top" alt="Capa do Álbum: Construção">
-          <div class="card-body">
-            <h5 class="card-title">Construção</h5>
-            <p class="card-text">Chico Buarque</p>
+    <div class="d-xl-none">
+      <div id="album2Carousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Albuns/Construção.jpeg" class="card-img-top" alt="Construção">
+              <div class="card-body text-center">
+                <h5 class="card-title">Construção</h5>
+                <p class="card-text">Chico Buarque</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Albuns/Clube_da_Esquina.jpeg" class="card-img-top" alt="Clube da Esquina">
+              <div class="card-body text-center">
+                <h5 class="card-title">Clube da Esquina</h5>
+                <p class="card-text">Milton Nascimento & Lô Borges</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Albuns/Elis_&_Tom.jpeg" class="card-img-top" alt="Elis & Tom">
+              <div class="card-body text-center">
+                <h5 class="card-title">Elis & Tom</h5>
+                <p class="card-text">Elias Regina & Antonio Carlos Jobim</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Albuns/Cartola_II.jpeg" class="card-img-top" alt="Cartola II">
+              <div class="card-body text-center">
+                <h5 class="card-title">Cartola II</h5>
+                <p class="card-text">Cartola</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Albuns/Getz_Gilberto.jpeg" class="card-img-top" alt="Getz/Gilberto">
+              <div class="card-body text-center">
+                <h5 class="card-title">Getz/Gilberto</h5>
+                <p class="card-text">Stan Getz & João Gilberto</p>
+              </div>
+            </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#album2Carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#album2Carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-      <div class="custom-col h-100 d-flex flex-column">
-        <div class="card">
-          <img src="img/Albuns/Clube_da_Esquina.jpeg" class="card-img-top" alt="Capa do Álbum: Clube da Esquina">
-          <div class="card-body">
-            <h5 class="card-title">Clube da Esquina</h5>
-            <p class="card-text">Milton Nascimento e Lô Borges</p>
+    </div>
+
+    <div class="d-none d-xl-block">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Albuns/Construção.jpeg" class="card-img-top" alt="Construção">
+            <div class="card-body">
+              <h5 class="card-title">Construção</h5>
+              <p class="card-text">Chico Buarque</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Albuns/Elis_&_Tom.jpeg" class="card-img-top" alt="Capa do Álbum: Elis & Tom">
-          <div class="card-body">
-            <h5 class="card-title">Elis & Tom</h5>
-            <p class="card-text">Elis Regina e Antônio Carlos Jobim</p>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Albuns/Clube_da_Esquina.jpeg" class="card-img-top" alt="Clube da Esquina">
+            <div class="card-body">
+              <h5 class="card-title">Clube da Esquina</h5>
+              <p class="card-text">Milton Nascimento & Lô Borges</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Albuns/Cartola_II.jpeg" class="card-img-top" alt="Capa do Álbum: Cartola II">
-          <div class="card-body">
-            <h5 class="card-title">Cartola II</h5>
-            <p class="card-text">Cartola</p>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Albuns/Elis_&_Tom.jpeg" class="card-img-top" alt="Elis & Tom">
+            <div class="card-body">
+              <h5 class="card-title">Elis & Tom</h5>
+              <p class="card-text">Elias Regina & Antonio Carlos Jobim</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Albuns/Getz_Gilberto.jpeg" class="card-img-top" alt="Capa do Álbum: Getz/Gilberto">
-          <div class="card-body">
-            <h5 class="card-title">Getz/Gilberto</h5>
-            <p class="card-text">Stan Getz e João Gilberto</p>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Albuns/Cartola_II.jpeg" class="card-img-top" alt="Cartola II">
+            <div class="card-body">
+              <h5 class="card-title">Cartola II</h5>
+              <p class="card-text">Cartola</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Albuns/Getz_Gilberto.jpeg" class="card-img-top" alt="Getz/Gilberto">
+            <div class="card-body">
+              <h5 class="card-title">Getz/Gilberto</h5>
+              <p class="card-text">Stan Getz & João Gilberto</p>
+            </div>
           </div>
         </div>
       </div>

@@ -56,6 +56,13 @@ body {
   margin: 0 auto;
 }
 
+.rounded-circle {
+  height: 180px;
+  width: 180px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
 .casinha {
   border-radius: 50%;
   object-fit: cover;
@@ -101,4 +108,15 @@ audio {
 
 .card:hover audio {
   opacity: 1;
+}
+
+.logo {
+  max-height: 50px;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-height: 35px;
+  }
 }

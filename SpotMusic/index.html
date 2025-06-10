@@ -17,7 +17,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark">
 
         <div class="d-flex align-items-center w-100">
-          <img src="img/Logo/spotmusic.png" alt="Logo" class="logo" height="50px">
+          <img src="img/Logo/spotmusic.png" alt="Logo" class="logo">
           <div class="flex-grow-1 d-flex justify-content-center align-items-center">
             <a class="me-3" href="index.html">
               <img src="img/Casa/casinha.png" class="casinha" alt="Home">
@@ -63,7 +63,8 @@
         <h4>Baixe o app e ouça onde quiser!</h4>
         <img src="img/Qr/qr.jpg" alt="QR Code para download" class="img-fluid my-3" style="max-width: 200px;">
         <br>
-        <a href="https://play.google.com/store/apps/details?id=com.spotify.music&hl=en&pli=1" class="btn btn-outline-light">
+        <a href="https://play.google.com/store/apps/details?id=com.spotify.music&hl=en&pli=1"
+          class="btn btn-outline-light">
           <i class="bi bi-download"></i> Baixar agora
         </a>
       </div>
@@ -78,131 +79,294 @@
       <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
     </div>
     <br>
-    <div class="row g-4">
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Musicas/Quero Ser Feliz Também.jpg" class="card-img-top"
-            alt="Capa da Música: Quero Ser Feliz Também">
-          <div class="card-body">
-            <h5 class="card-title">Quero Ser Feliz Também</h5>
-            <p class="card-text">Natiruts</p>
-            <audio controls class="w-100">
-              <source src="audio/Quero Ser Feliz Também.mp3" type="audio/mpeg">
-              Seu navegador não suporta o player de áudio.
-            </audio>
+
+    <div class="d-xl-none">
+      <div id="musicCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Musicas/Quero Ser Feliz Também.jpg" class="card-img-top" alt="Natiruts">
+              <div class="card-body text-center">
+                <h5 class="card-title">Quero Ser Feliz Também</h5>
+                <p class="card-text">Natiruts</p>
+                <audio controls class="w-100">
+                  <source src="audio/Quero Ser Feliz Também.mp3" type="audio/mpeg">
+                  Seu navegador não suporta o player de áudio.
+                </audio>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Musicas/Goodnight.jpg" class="card-img-top" alt="Goodnight">
+              <div class="card-body text-center">
+                <h5 class="card-title">Goodnight</h5>
+                <p class="card-text">Shaman</p>
+                <audio controls class="w-100">
+                  <source src="audio/Goodnight.mp3" type="audio/mpeg">
+                  Seu navegador não suporta o player de áudio.
+                </audio>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Musicas/Tu Xera.png" class="card-img-top" alt="Tu Xera">
+              <div class="card-body text-center">
+                <h5 class="card-title">Tu Xera</h5>
+                <p class="card-text">Anderson & Vei da Pisadinha</p>
+                <audio controls class="w-100">
+                  <source src="audio/Tu Xera.mp3" type="audio/mpeg">
+                  Seu navegador não suporta o player de áudio.
+                </audio>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Musicas/Eu Te Devoro.jpeg" class="card-img-top" alt="Eu Te Devoro">
+              <div class="card-body text-center">
+                <h5 class="card-title">Eu Te Devoro</h5>
+                <p class="card-text">Djavan</p>
+                <audio controls class="w-100">
+                  <source src="audio/Eu Te Devoro.mp3" type="audio/mpeg">
+                  Seu navegador não suporta o player de áudio.
+                </audio>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Musicas/Ta Escrito.jpg" class="card-img-top" alt="Tá Escrito">
+              <div class="card-body text-center">
+                <h5 class="card-title">Tá Escrito</h5>
+                <p class="card-text">Grupo Revelação</p>
+                <audio controls class="w-100">
+                  <source src="audio/Ta Escrito.mp3" type="audio/mpeg">
+                  Seu navegador não suporta o player de áudio.
+                </audio>
+              </div>
+            </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#musicCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#musicCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Musicas/Goodnight.jpg" class="card-img-top" alt="Capa da Música: Goodnight">
-          <div class="card-body">
-            <h5 class="card-title">Goodnight</h5>
-            <p class="card-text">Shaman</p>
-            <audio controls class="w-100">
-              <source src="audio/Goodnight.mp3" type="audio/mpeg">
-              Seu navegador não suporta o player de áudio.
-            </audio>
+    </div>
+
+    <div class="d-none d-xl-block">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Musicas/Quero Ser Feliz Também.jpg" class="card-img-top" alt="Natiruts">
+            <div class="card-body text-center">
+              <h5 class="card-title">Quero Ser Feliz Também</h5>
+              <p class="card-text">Natiruts</p>
+              <audio controls class="w-100">
+                <source src="audio/Quero Ser Feliz Também.mp3" type="audio/mpeg">
+                Seu navegador não suporta o player de áudio.
+              </audio>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Musicas/Tu Xera.png" class="card-img-top" alt="Capa da Música: Tu Xera">
-          <div class="card-body">
-            <h5 class="card-title">Tu Xera</h5>
-            <p class="card-text">Anderson & Vei da Pisadinha</p>
-            <audio controls class="w-100">
-              <source src="audio/Tu Xera.mp3" type="audio/mpeg">
-              Seu navegador não suporta o player de áudio.
-            </audio>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Musicas/Goodnight.jpg" class="card-img-top" alt="Goodnight">
+            <div class="card-body text-center">
+              <h5 class="card-title">Goodnight</h5>
+              <p class="card-text">Shaman</p>
+              <audio controls class="w-100">
+                <source src="audio/Goodnight.mp3" type="audio/mpeg">
+                Seu navegador não suporta o player de áudio.
+              </audio>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Musicas/Eu Te Devoro.jpeg" class="card-img-top" alt="Capa da Música: Eu Te Devoro">
-          <div class="card-body">
-            <h5 class="card-title">Eu Te Devoro</h5>
-            <p class="card-text">Djavan</p>
-            <audio controls class="w-100">
-              <source src="audio/Eu Te Devoro.mp3" type="audio/mpeg">
-              Seu navegador não suporta o player de áudio.
-            </audio>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Musicas/Tu Xera.png" class="card-img-top" alt="Tu Xera">
+            <div class="card-body text-center">
+              <h5 class="card-title">Tu Xera</h5>
+              <p class="card-text">Anderson & Vei da Pisadinha</p>
+              <audio controls class="w-100">
+                <source src="audio/Tu Xera.mp3" type="audio/mpeg">
+                Seu navegador não suporta o player de áudio.
+              </audio>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Musicas/Ta Escrito.jpg" class="card-img-top" alt="Capa da Música: Tá Escrito">
-          <div class="card-body">
-            <h5 class="card-title">Tá Escrito</h5>
-            <p class="card-text">Grupo Revelação</p>
-            <audio controls class="w-100">
-              <source src="audio/Ta Escrito.mp3" type="audio/mpeg">
-              Seu navegador não suporta o player de áudio.
-            </audio>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Musicas/Eu Te Devoro.jpeg" class="card-img-top" alt="Eu Te Devoro">
+            <div class="card-body text-center">
+              <h5 class="card-title">Eu Te Devoro</h5>
+              <p class="card-text">Djavan</p>
+              <audio controls class="w-100">
+                <source src="audio/Eu Te Devoro.mp3" type="audio/mpeg">
+                Seu navegador não suporta o player de áudio.
+              </audio>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/Musicas/Ta Escrito.jpg" class="card-img-top" alt="Tá Escrito">
+            <div class="card-body text-center">
+              <h5 class="card-title">Tá Escrito</h5>
+              <p class="card-text">Grupo Revelação</p>
+              <audio controls class="w-100">
+                <source src="audio/Ta Escrito.mp3" type="audio/mpeg">
+                Seu navegador não suporta o player de áudio.
+              </audio>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="d-flex justify-content-between align-items-center">
       <h2>Artistas Populares</h2>
       <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
     </div>
     <br>
-    <div class="row g-4">
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Artistas/michael-jackson.jpg" class="rounded-circle" alt="Capa do Álbum: Construção">
-          <div class="card-body">
-            <h5 class="card-title">Michael Jackson</h5>
-            <p class="card-text">Artista</p>
+
+    <div class="d-xl-none">
+      <div id="artistCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Artistas/michael-jackson.jpg" class="rounded-circle card-img-top" alt="Michael Jackson">
+              <div class="card-body text-center">
+                <h5 class="card-title">Michael Jackson</h5>
+                <p class="card-text">Artista</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Artistas/djavan.jpg" class="rounded-circle card-img-top" alt="Djavan">
+              <div class="card-body text-center">
+                <h5 class="card-title">Djavan</h5>
+                <p class="card-text">Artista</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Artistas/wolfgang-amadeus-mozart.jpg" class="rounded-circle card-img-top"
+                alt="Wolfgang Amadeus Mozart">
+              <div class="card-body text-center">
+                <h5 class="card-title">Wolfgang Amadeus Mozart</h5>
+                <p class="card-text">Artista</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Artistas/aretha-franklin.jpg" class="rounded-circle card-img-top" alt="Aretha Franklin">
+              <div class="card-body text-center">
+                <h5 class="card-title">Aretha Franklin</h5>
+                <p class="card-text">Artista</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card h-100 mx-auto" style="max-width: 300px;">
+              <img src="img/Artistas/coldplay.jpg" class="rounded-circle card-img-top" alt="Coldplay">
+              <div class="card-body text-center">
+                <h5 class="card-title">Coldplay</h5>
+                <p class="card-text">Artista</p>
+              </div>
+            </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#artistCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#artistCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
       </div>
-      <div class="custom-col h-100 d-flex flex-column">
-        <div class="card">
-          <img src="img/Artistas/djavan.jpg" class="rounded-circle" alt="Artista: Djavan">
-          <div class="card-body">
-            <h5 class="card-title">Djavan</h5>
-            <p class="card-text">Artista</p>
+    </div>
+
+    <div class="d-none d-xl-block">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Artistas/michael-jackson.jpg" class="rounded-circle card-img-top" alt="Michael Jackson">
+            <div class="card-body">
+              <h5 class="card-title">Michael Jackson</h5>
+              <p class="card-text">Artista</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Artistas/wolfgang-amadeus-mozart.jpg" class="rounded-circle" alt="Artista: Wolfgang Amadeus Mozart">
-          <div class="card-body">
-            <h5 class="card-title">Wolfgang Amadeus Mozart</h5>
-            <p class="card-text">Artista</p>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Artistas/djavan.jpg" class="rounded-circle card-img-top" alt="Djavan">
+            <div class="card-body">
+              <h5 class="card-title">Djavan</h5>
+              <p class="card-text">Artista</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Artistas/aretha-franklin.jpg" class="rounded-circle" alt="Artista: Aretha Franklin">
-          <div class="card-body">
-            <h5 class="card-title">Aretha Franklin</h5>
-            <p class="card-text">Artista</p>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Artistas/wolfgang-amadeus-mozart.jpg" class="rounded-circle card-img-top"
+              alt="Wolfgang Amadeus Mozart">
+            <div class="card-body">
+              <h5 class="card-title">Wolfgang Amadeus Mozart</h5>
+              <p class="card-text">Artista</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="custom-col">
-        <div class="card h-100 d-flex flex-column">
-          <img src="img/Artistas/coldplay.jpg" class="rounded-circle" alt="Artista: Coldplay">
-          <div class="card-body">
-            <h5 class="card-title">Coldplay</h5>
-            <p class="card-text">Artista</p>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Artistas/aretha-franklin.jpg" class="rounded-circle card-img-top" alt="Aretha Franklin">
+            <div class="card-body">
+              <h5 class="card-title">Aretha Franklin</h5>
+              <p class="card-text">Artista</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/Artistas/coldplay.jpg" class="rounded-circle card-img-top" alt="Coldplay">
+            <div class="card-body">
+              <h5 class="card-title">Coldplay</h5>
+              <p class="card-text">Artista</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
