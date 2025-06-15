@@ -12,17 +12,28 @@
 </head>
 
 <body>
+
+  <!-- Referência da Seta -->
   <a id="topo" style="display: block; position: relative; top: -80px;"></a>
+
+  <!-- Cabeçalho -->
   <header class="bg-black py-2 fixed-top">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark">
 
+      <!-- Barra de Navegação -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="d-flex align-items-center w-100">
+
+          <!-- Logo -->
           <img src="img/Logo/spotmusic.png" alt="Logo" class="logo" height="50px">
           <div class="flex-grow-1 d-flex justify-content-center">
+
+            <!-- Botão de Voltar para a Tela Inicial -->
             <a class="me-3" href="index.html">
               <img src="img/Casa/casinha.png" class="casinha" alt="Home">
             </a>
+
+            <!-- Barra de Pesquisa -->
             <form class="d-flex w-75" role="search">
               <input class="form-control me-2" type="search" placeholder="O que você quer ouvir?" aria-label="Buscar">
               <button class="btn btn-outline-light" type="submit">
@@ -35,6 +46,7 @@
           </button>
         </div>
 
+        <!-- Páginas de Navegação -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="playlists.html">Playlists</a></li>
@@ -43,16 +55,20 @@
             <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
           </ul>
         </div>
-      </nav><br>
+      </nav>
     </div>
 
   </header>
+
+  <!-- Álbuns -->
   <div class="container my-5">
     <div class="d-flex justify-content-between align-items-center">
       <h2>Álbuns Recomendados</h2>
       <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
     </div>
     <br>
+
+    <!-- Álbuns Recomendados (Mobile) -->
     <div class="d-xl-none">
       <div id="albumCarousel" class="carousel slide" data-bs-ride="false">
         <div class="carousel-inner">
@@ -116,8 +132,10 @@
       </div>
     </div>
 
+    <!-- Álbuns Recomendados (Desktop) -->
     <div class="d-none d-xl-block">
       <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
+
         <div class="col">
           <div class="card h-100 text-center">
             <img src="img/Albuns/Dark_Side_of_the_Moon.png" class="card-img-top" alt="Dark Side of The Moon">
@@ -141,7 +159,7 @@
         <div class="col">
           <div class="card h-100 text-center">
             <a href="thriller.html">
-            <img src="img/Albuns/Thriller.jpeg" class="card-img-top" alt="Thriller">
+              <img src="img/Albuns/Thriller.jpeg" class="card-img-top" alt="Thriller">
             </a>
             <div class="card-body">
               <h5 class="card-title">Thriller</h5>
@@ -179,6 +197,8 @@
       <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
     </div>
     <br>
+
+    <!-- Álbuns Brasileiros (Mobile) -->
     <div class="d-xl-none">
       <div id="album2Carousel" class="carousel slide" data-bs-ride="false">
         <div class="carousel-inner">
@@ -242,6 +262,7 @@
       </div>
     </div>
 
+    <!-- Álbuns Brasileiros (Desktop) -->
     <div class="d-none d-xl-block">
       <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-4">
         <div class="col">
@@ -293,15 +314,20 @@
             </div>
           </div>
         </div>
+        
       </div>
     </div>
-    <br>
-    <br>
-    <br>
+
   </div>
-  <a href="#topo" class="back-to-top position-fixed text-decoration-none" style="bottom: 20px; right: 20px; z-index: 999;">
-  <i class="bi bi-arrow-up-circle-fill fs-2"></i>
-</a>
+  <br>
+  <br>
+  <br>
+
+  <!-- Seta para Voltar ao Topo da Página -->
+  <a href="#topo" class="back-to-top position-fixed text-decoration-none"
+    style="bottom: 20px; right: 20px; z-index: 999;">
+    <i class="bi bi-arrow-up-circle-fill fs-2"></i>
+  </a>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

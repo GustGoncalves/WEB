@@ -1,9 +1,20 @@
+/* =============================
+   GERAL
+============================= */
 body {
   font-family: Arial, sans-serif;
   background-color: #000000;
   padding-top: 80px;
+  /* Espaço para o header fixo */
 }
 
+.container {
+  color: white;
+}
+
+/* =============================
+   CARTÕES (ALBUNS, PLAYLISTS)
+============================= */
 .card {
   transition: transform 0.3s ease;
   background-color: #000000;
@@ -20,16 +31,89 @@ body {
   transform: scale(1.03);
 }
 
-@media (max-width: 768px) {
-  header img {
-    height: auto;
+.card-img-top {
+  height: 180px;
+  width: 180px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Áudio visível ao passar o mouse */
+audio {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover audio {
+  opacity: 1;
+}
+
+/* =============================
+   CABEÇALHO E NAVEGAÇÃO
+============================= */
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo {
+  max-height: 50px;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .logo {
+    max-height: 35px;
   }
 }
 
-.container {
-  color: white;
+/* Ícone da casinha (home) */
+.casinha {
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  pointer-events: auto;
 }
 
+/* =============================
+   FORMULÁRIOS
+============================= */
+.form-control,
+.form-select {
+  background-color: #000;
+  color: white;
+  border: 1px solid white;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.form-control:focus {
+  background-color: #000;
+  color: white;
+  border-color: white;
+  box-shadow: none;
+}
+
+/* =============================
+   BOTÃO "VOLTAR AO TOPO"
+============================= */
+.back-to-top i {
+  color: rgba(255, 255, 255, 0.4);
+  transition: color 0.3s ease;
+}
+
+.back-to-top:hover i {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* =============================
+   GRID PERSONALIZADO
+============================= */
 .custom-col {
   flex: 0 0 20%;
   max-width: 20%;
@@ -49,84 +133,9 @@ body {
   }
 }
 
-.card-img-top {
-  height: 180px;
-  width: 180px;
-  object-fit: contain;
-  margin: 0 auto;
-}
-
-.casinha {
-  border-radius: 50%;
-  object-fit: cover;
-  cursor: pointer;
-  display: block;
-  width: 40px;
-  height: 40px;
-  pointer-events: auto;
-}
-
-.navbar {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.form-control {
-  background-color: #000;
-  color: white;
-  border: 1px solid white;
-}
-
-.form-select {
-  background-color: #000;
-  color: white;
-  border: 1px solid white;
-}
-
-.form-control::placeholder {
-  color: #aaa;
-}
-
-.form-control:focus {
-  background-color: #000;
-  color: white;
-  border-color: white;
-  box-shadow: none;
-}
-
-audio {
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.card:hover audio {
-  opacity: 1;
-}
-
-.logo {
-  max-height: 50px;
-  height: auto;
-}
-
-@media (max-width: 576px) {
-  .logo {
-    max-height: 35px;
-  }
-}
-
-/* Seta */
-
-.back-to-top i {
-  color: rgba(255, 255, 255, 0.4);
-  transition: color 0.3s ease;
-}
-
-.back-to-top:hover i {
-  color: rgba(255, 255, 255, 1);
-}
-
-/* Album e playlist estrutura*/
-
+/* =============================
+   PÁGINA DO ÁLBUM
+============================= */
 .album-container {
   display: flex;
   gap: 50px;
@@ -160,11 +169,7 @@ audio {
   color: #ffffff;
 }
 
-.album-artist {
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-
+.album-artist,
 .album-year {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 10px;
@@ -190,19 +195,15 @@ audio {
   cursor: pointer;
 }
 
-.track-number {
+.track-number,
+.track-duration {
   color: rgba(255, 255, 255, 0.6);
-  width: 30px;
 }
 
 .track-title {
   flex-grow: 1;
   margin-left: 20px;
   color: #ffffff;
-}
-
-.track-duration {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .play-button {
@@ -225,7 +226,7 @@ audio {
   margin-left: 3px;
 }
 
-/* Responsividade */
+/* Responsividade da página do álbum */
 @media (max-width: 992px) {
   .album-container {
     flex-direction: column;
@@ -271,4 +272,170 @@ audio {
   .track-duration {
     font-size: 0.8rem;
   }
+}
+
+/* =============================
+   PÁGINA DO ARTISTA
+============================= */
+.artist-container {
+  position: relative;
+  margin-top: -80px;
+  /* Compensa o header fixo */
+  margin-bottom: 40px;
+}
+
+.artist-banner {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.artist-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, #000 0%, transparent 100%);
+}
+
+.artist-info {
+  position: relative;
+  z-index: 2;
+  margin-top: -100px;
+  /* Sobrepõe o gradiente */
+  padding-bottom: 40px;
+}
+
+.artist-name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.artist-genre {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.top-tracks {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.track-plays {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin-right: 20px;
+}
+
+.artist-albums {
+  margin-bottom: 60px;
+}
+
+.album-card {
+  background: none;
+  border: none;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.album-card:hover {
+  transform: scale(1.05);
+}
+
+.album-card img {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.album-card .card-title {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.album-card .card-text {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsividade da página do artista */
+@media (max-width: 768px) {
+  .artist-banner {
+    height: 50vh;
+    max-height: 400px;
+  }
+
+  .artist-name {
+    font-size: 2.5rem !important;
+  }
+
+  .artist-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+/* Player estilo Spotify */
+#spotify-player {
+  background-color: #0A0A0A;
+  z-index: 1000;
+}
+
+#progress-bar {
+  height: 4px;
+  cursor: pointer;
+}
+
+#progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+}
+
+#volume-control {
+  height: 4px;
+  width: 100px;
+}
+
+#volume-control::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+}
+
+/* Esconde os controles nativos de áudio */
+audio {
+  display: none !important;
 }

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpotMusic</title>
+  <link rel="icon" href="img/Logo/logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="artist-body">
+
+  <!-- Referência da Seta -->
+  <a id="topo" style="display: block; position: relative; top: -80px;"></a>
+
+  <!-- Cabeçalho -->
+  <header class="bg-black py-2 fixed-top">
+    <div class="container-fluid">
+
+      <!-- Barra de Navegação -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="d-flex align-items-center w-100">
+
+          <!-- Logo -->
+          <img src="img/Logo/spotmusic.png" alt="Logo" class="logo" height="50px">
+          <div class="flex-grow-1 d-flex justify-content-center">
+
+            <!-- Botão de Voltar para a Tela Inicial -->
+            <a class="me-3" href="index.html">
+              <img src="img/Casa/casinha.png" class="casinha" alt="Home">
+            </a>
+
+            <!-- Barra de Pesquisa -->
+            <form class="d-flex w-75" role="search">
+              <input class="form-control me-2" type="search" placeholder="O que você quer ouvir?" aria-label="Buscar">
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- Páginas de Navegação -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="playlists.html">Playlists</a></li>
+            <li class="nav-item"><a class="nav-link" href="albuns.html">Álbuns</a></li>
+            <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- Banner do Artista -->
+  <div class="artist-banner">
+    <img src="img/Artistas/djavan-banner.jpg" alt="Djavan" class="artist-banner-image">
+    <div class="banner-gradient"></div>
+  </div>
+
+  <!-- Cabeçalho do Artista -->
+  <div class="container">
+    <div class="artist-container">
+      <div class="artist-info">
+        <h1 class="artist-name">Djavan</h1>
+        <button class="btn btn-outline-light px-4 py-2 rounded-pill">Seguir</button>
+      </div>
+    </div>
+
+    <!-- Músicas mais populares -->
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Músicas do Artista</h2>
+      <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
+    </div>
+    <br>
+    <div class="top-tracks">
+      <div class="track-item" data-cover="img/capa.jpg" data-artist="Nome do Artista">
+        <span class="track-number">1</span>
+        <span class="track-title">Nem Um Dia</span>
+        <span class="track-duration">5:47</span>
+      </div>
+      <div class="track-item">
+        <span class="track-number">2</span>
+        <span class="track-title">Um Amor Puro</span>
+        <span class="track-duration">5:27</span>
+      </div>
+      <div class="track-item">
+        <span class="track-number">3</span>
+        <span class="track-title">Se...</span>
+        <span class="track-duration">4:52</span>
+      </div>
+      <div class="track-item">
+        <span class="track-number">4</span>
+        <span class="track-title">Oceano</span>
+        <span class="track-duration">4:57</span>
+      </div>
+      <div class="track-item">
+        <span class="track-number">5</span>
+        <span class="track-title">Samurai (feat. Stevie Wonder)</span>
+        <span class="track-duration">4:49</span>
+      </div>
+    </div>
+
+    <!-- Álbuns do artista (Mobile)-->
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Álbuns do Artista</h2>
+      <a href="#" class="btn btn-outline-light btn-sm">Ver mais</a>
+    </div>
+    <br>
+    <div class="artist-albums">
+      <div class="d-xl-none">
+        <div id="artistAlbumsCarousel" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-8 col-md-6 col-lg-4">
+                  <div class="album-card card h-100 mx-auto">
+                    <a href="thriller.html">
+                      <img src="img/Albuns/A_voz_o_violão_a_musica_de_djavan.jpg" class="card-img-top" alt="Thriller">
+                    </a>
+                    <div class="card-body">
+                      <h5 class="card-title">A Voz, O Violão, A Música de Djavan</h5>
+                      <p class="card-text">1976 • 12 músicas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-8 col-md-6 col-lg-4">
+                  <div class="album-card card h-100 mx-auto">
+                    <img src="img/Albuns/Luz.jpg" class="card-img-top" alt="Bad">
+                    <div class="card-body">
+                      <h5 class="card-title">Luz</h5>
+                      <p class="card-text">1982 • 10 músicas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-8 col-md-6 col-lg-4">
+                  <div class="album-card card h-100 mx-auto">
+                    <img src="img/Albuns/Malásia.jpg" class="card-img-top" alt="Bad">
+                    <div class="card-body">
+                      <h5 class="card-title">Malásia</h5>
+                      <p class="card-text">1996 • 12 músicas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-8 col-md-6 col-lg-4">
+                  <div class="album-card card h-100 mx-auto">
+                    <img src="img/Albuns/Oceano.jpg" class="card-img-top" alt="Bad">
+                    <div class="card-body">
+                      <h5 class="card-title">Djavan</h5>
+                      <p class="card-text">1989 • 9 músicas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-8 col-md-6 col-lg-4">
+                  <div class="album-card card h-100 mx-auto">
+                    <img src="img/Albuns/Seduzir.jpg" class="card-img-top" alt="Bad">
+                    <div class="card-body">
+                      <h5 class="card-title">Seduzir</h5>
+                      <p class="card-text">1980 • 9 músicas</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#artistAlbumsCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#artistAlbumsCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Álbuns do Artista (Desktop) -->
+      <div class="d-none d-xl-block">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+          <div class="col">
+            <div class="album-card card h-100">
+              <img src="img/Albuns/A_voz_o_violão_a_musica_de_djavan.jpg" class="card-img-top"
+                alt="A Voz, O Violão, A Música de Djavan">
+              <div class="card-body">
+                <h5 class="card-title">A Voz, O Violão, A Música de Djavan</h5>
+                <p class="card-text">1976 • 12 músicas</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="album-card card h-100">
+              <img src="img/Albuns/Luz.jpg" class="card-img-top" alt="Luz">
+              <div class="card-body">
+                <h5 class="card-title">Luz</h5>
+                <p class="card-text">1982 • 10 músicas</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="album-card card h-100">
+              <img src="img/Albuns/Malásia.jpg" class="card-img-top" alt="Malásia">
+              <div class="card-body">
+                <h5 class="card-title">Malásia</h5>
+                <p class="card-text">1996 • 12 músicas</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="album-card card h-100">
+              <img src="img/Albuns/Oceano.jpg" class="card-img-top" alt="Djavan">
+              <div class="card-body">
+                <h5 class="card-title">Djavan</h5>
+                <p class="card-text">1989 • 9 músicas</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="album-card card h-100">
+              <img src="img/Albuns/Seduzir.jpg" class="card-img-top" alt="Seduzir">
+              <div class="card-body">
+                <h5 class="card-title">Seduzir</h5>
+                <p class="card-text">1980 • 9 músicas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seta para Voltar ao Topo da Página -->
+  <a href="#topo" class="back-to-top position-fixed text-decoration-none"
+    style="bottom: 20px; right: 20px; z-index: 999;">
+    <i class="bi bi-arrow-up-circle-fill fs-2"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

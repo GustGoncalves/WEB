@@ -2,127 +2,127 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpotMusic</title>
-    <link rel="icon" href="img/Logo/logo.png" type="image/png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpotMusic</title>
+  <link rel="icon" href="img/Logo/logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <a id="topo" style="display: block; position: relative; top: -80px;"></a>
-    <header class="bg-black py-2 fixed-top">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-dark">
 
-                <div class="d-flex align-items-center w-100">
-                    <img src="img/Logo/spotmusic.png" alt="Logo" class="logo" height="50px">
-                    <div class="flex-grow-1 d-flex justify-content-center">
-                        <a class="me-3" href="index.html">
-                            <img src="img/Casa/casinha.png" class="casinha" alt="Home">
-                        </a>
-                        <form class="d-flex w-75" role="search">
-                            <input class="form-control me-2" type="search" placeholder="O que você quer ouvir?"
-                                aria-label="Buscar">
-                            <button class="btn btn-outline-light" type="submit">
-                                <i class="bi bi-search"></i>
-                            </button>
-                        </form>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+  <!-- Cabeçalho -->
+  <header class="bg-black py-2 fixed-top">
+    <div class="container-fluid">
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="playlists.html">Playlists</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="albuns.html">Álbuns</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                    </ul>
-                </div>
-            </nav><br>
+      <!-- Barra de Navegação -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="d-flex align-items-center w-100">
+
+          <!-- Logo -->
+          <img src="img/Logo/spotmusic.png" alt="Logo" class="logo" height="50px">
+          <div class="flex-grow-1 d-flex justify-content-center">
+
+            <!-- Botão de Voltar para a Tela Inicial -->
+            <a class="me-3" href="index.html">
+              <img src="img/Casa/casinha.png" class="casinha" alt="Home">
+            </a>
+
+            <!-- Barra de Pesquisa -->
+            <form class="d-flex w-75" role="search">
+              <input class="form-control me-2" type="search" placeholder="O que você quer ouvir?" aria-label="Buscar">
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
 
-    </header>
-    <div class="album-container">
-        <!-- Seção da capa do álbum -->
-        <div class="album-cover text-center">
-            <img src="img/Albuns/Thriller.jpeg" alt="Capa do Álbum">
-            <h1 class="album-title">Thriller</h1>
-            <h2 class="album-artist">Michael Jackson</h2>
-            <p class="album-year">1982 • 9 músicas</p>
-            <button class="play-button">
-                <i class="bi bi-play-fill"></i>
-            </button>
+        <!-- Páginas de Navegação -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="playlists.html">Playlists</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="albuns.html">Álbuns</a></li>
+            <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </ul>
         </div>
-
-        <!-- Seção das informações e músicas -->
-        <div class="album-info">
-
-
-
-            <ul class="track-list">
-                <li class="track-item">
-                    <span class="track-number">1</span>
-                    <span class="track-title">Wanna Be Startin' Somethin'</span>
-                    <span class="track-duration">6:04</span>
-                </li>
-                <li class="track-item">
-                    <span class="track-number">2</span>
-                    <span class="track-title">Baby Be Mine</span>
-                    <span class="track-duration">4:21</span>
-                </li>
-                <li class="track-item">
-                    <span class="track-number">3</span>
-                    <span class="track-title">The Girl Is Mine</span>
-                    <span class="track-duration">3:43</span>
-                </li>
-                <li class="track-item">
-                    <span class="track-number">4</span>
-                    <span class="track-title">Thriller</span>
-                    <span class="track-duration">5:58</span>
-                </li>
-                <li class="track-item">
-                    <span class="track-number">5</span>
-                    <span class="track-title">Beat It</span>
-                    <span class="track-duration">4:19</span>
-                </li>
-                <li class="track-item">
-                    <span class="track-number">6</span>
-                    <span class="track-title">Billie Jean</span>
-                    <span class="track-duration">4:55</span>
-                </li>
-                <li class="track-item">
-                    <span class="track-number">7</span>
-                    <span class="track-title">Human Nature</span>
-                    <span class="track-duration">4:07</span>
-                </li>
-                <li class="track-item">
-                    <span class="track-number">8</span>
-                    <span class="track-title">P.Y.T. (Pretty Young Thing)</span>
-                    <span class="track-duration">4:00</span>
-                </li>
-                <li class="track-item">
-                    <span class="track-number">9</span>
-                    <span class="track-title">The Lady in My Life</span>
-                    <span class="track-duration">5:01</span>
-                </li>
-            </ul>
-        </div>
+      </nav><br>
     </div>
-    <a href="#topo" class="back-to-top position-fixed text-decoration-none"
-        style="bottom: 20px; right: 20px; z-index: 999;">
-        <i class="bi bi-arrow-up-circle-fill fs-2"></i>
-    </a>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+  </header>
+
+  <div class="album-container">
+
+    <!-- Capa do álbum -->
+    <div class="album-cover text-center">
+      <img src="img/Albuns/Thriller.jpeg" alt="Capa do Álbum">
+      <h1 class="album-title">Thriller</h1>
+      <h2 class="album-artist">Michael Jackson</h2>
+      <p class="album-year">1982 • 9 músicas</p>
+      <button class="play-button">
+        <i class="bi bi-play-fill"></i>
+      </button>
+    </div>
+
+    <!-- Músicas do Álbum -->
+    <div class="album-info">
+      <ul class="track-list">
+        <li class="track-item">
+          <span class="track-number">1</span>
+          <span class="track-title">Wanna Be Startin' Somethin'</span>
+          <span class="track-duration">6:04</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">2</span>
+          <span class="track-title">Baby Be Mine</span>
+          <span class="track-duration">4:21</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">3</span>
+          <span class="track-title">The Girl Is Mine</span>
+          <span class="track-duration">3:43</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">4</span>
+          <span class="track-title">Thriller</span>
+          <span class="track-duration">5:58</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">5</span>
+          <span class="track-title">Beat It</span>
+          <span class="track-duration">4:19</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">6</span>
+          <span class="track-title">Billie Jean</span>
+          <span class="track-duration">4:55</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">7</span>
+          <span class="track-title">Human Nature</span>
+          <span class="track-duration">4:07</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">8</span>
+          <span class="track-title">P.Y.T. (Pretty Young Thing)</span>
+          <span class="track-duration">4:00</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">9</span>
+          <span class="track-title">The Lady in My Life</span>
+          <span class="track-duration">5:01</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
