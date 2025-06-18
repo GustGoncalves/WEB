@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpotMusic</title>
+  <link rel="icon" href="img/Logo/logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="bg-black py-2 fixed-top">
+    <div class="container-fluid">
+
+      <!-- Barra de Navegação -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="d-flex align-items-center w-100">
+
+          <!-- Logo -->
+          <img src="img/Logo/spotmusic.png" alt="Logo" class="logo" height="50px">
+          <div class="flex-grow-1 d-flex justify-content-center">
+
+            <!-- Botão de Voltar para a Tela Inicial -->
+            <a class="me-3" href="index.html">
+              <img src="img/Casa/casinha.png" class="casinha" alt="Home">
+            </a>
+
+            <!-- Barra de Pesquisa -->
+            <form class="d-flex w-75" role="search">
+              <input class="form-control me-2" type="search" placeholder="O que você quer ouvir?" aria-label="Buscar">
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- Páginas de Navegação -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="playlists.html">Playlists</a></li>
+            <li class="nav-item"><a class="nav-link" href="albuns.html">Álbuns</a></li>
+            <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </nav><br>
+    </div>
+
+  </header>
+
+  <div class="playlist-container">
+
+    <!-- Capa do álbum -->
+    <div class="playlist-cover text-center">
+      <img src="img/Playlists/Flash_Back.jpg" alt="Capa da Playlist">
+      <h1 class="playlist-title">Flash Back</h1>
+      <p class="playlist-year">70,80,90s • 5 músicas</p>
+      <button class="play-button">
+        <i class="bi bi-play-fill"></i>
+      </button>
+    </div>
+
+    <!-- Músicas da Playlist -->
+    <div class="playlist-info">
+      <ul class="track-list">
+       <li class="track-item">
+        <span class="track-number">1</span>
+        <div class="track-special">
+          <span class="track-title">Girls Just Want to Have Fun</span>
+          <p class="card_text">Cyndi Lauper</p>
+        </div>
+        <span class="track-duration">3:55</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">2</span>
+          <div class="track-info">
+           <span class="track-title">Careless Whisper</span>
+           <p class="card_text">George Michael</p>
+          </div>
+          <span class="track-duration">5:00</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">3</span>
+          <div class="track-info">
+           <span class="track-title">Que País É Este</span>
+           <p class="card_text">Legião Urbana</p>
+          </div>
+          <span class="track-duration">2:58</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">4</span>
+          <div class="track-info">
+           <span class="track-title">Dancin' Days</span>
+           <p class="card_text">As Frenéticas</p>
+          </div>
+          <span class="track-duration">5:41</span>
+        </li>
+        <li class="track-item">
+          <span class="track-number">5</span>
+          <div class="track-info">
+           <span class="track-title">Whisky a Go Go</span>
+           <p class="card_text">Roupa Nova</p>
+          </div>
+          <span class="track-duration">4:09</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
