@@ -1,0 +1,25 @@
+#spotify-player {
+  background-color: #0A0A0A;
+  z-index: 1000;
+}
+
+#progress-bar,
+#volume-control {
+  height: 4px;
+  cursor: pointer;
+}
+
+#progress-bar::-webkit-slider-thumb,
+#volume-control::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+}
+
+/* Esconde os controles nativos */
+audio {
+  display: none !important;
+}

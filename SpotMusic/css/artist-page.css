@@ -1,0 +1,121 @@
+.artist-container {
+  position: relative;
+  margin-top: -80px;
+  margin-bottom: 40px;
+}
+
+.artist-banner {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.artist-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, #000 0%, transparent 100%);
+}
+
+.artist-info {
+  position: relative;
+  z-index: 2;
+  margin-top: -100px;
+  padding-bottom: 40px;
+}
+
+.artist-name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.artist-genre {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.top-tracks {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.track-plays {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin-right: 20px;
+}
+
+.artist-albums {
+  margin-bottom: 60px;
+}
+
+.album-card {
+  background: none;
+  border: none;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.album-card:hover {
+  transform: scale(1.05);
+}
+
+.album-card img {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.album-card .card-title {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.album-card .card-text {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .artist-banner {
+    height: 50vh;
+    max-height: 400px;
+  }
+
+  .artist-name {
+    font-size: 2.5rem !important;
+  }
+
+  .artist-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 0;
+  }
+}

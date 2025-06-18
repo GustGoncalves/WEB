@@ -1,0 +1,22 @@
+.card {
+  transition: transform 0.3s ease;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-img-top {
+  height: 180px;
+  width: 180px;
+  object-fit: contain;
+  margin: 0 auto;
+}

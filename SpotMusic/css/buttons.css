@@ -1,0 +1,8 @@
+.back-to-top i {
+  color: rgba(255, 255, 255, 0.4);
+  transition: color 0.3s ease;
+}
+
+.back-to-top:hover i {
+  color: rgba(255, 255, 255, 1);
+}
