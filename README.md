@@ -1,4 +1,4 @@
-# Trabalho-Web-I
+# SpotMusic
 
 Este é um projeto de interface web para streaming de música.
 
