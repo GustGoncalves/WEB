@@ -7,6 +7,7 @@ Este é um projeto de interface web para streaming de música.
 - HTML5
 - CSS3
 - [Bootstrap 5](https://getbootstrap.com/)
+- JavaScript
 
 ## Como clonar e contribuir com o projeto
 
